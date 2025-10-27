@@ -1,0 +1,290 @@
+:root {
+  --navy: rgb(8, 9, 64);
+  --light-blue: rgb(192, 222, 232);
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar - Same as homepage */
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.nav-link {
+  color: var(--navy) !important;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 8px 12px !important;
+  transition: 300ms ease;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: var(--navy);
+  color: azure !important;
+  box-shadow: 0 8px 16px rgba(8, 9, 64, 0.12);
+}
+
+.btn-login {
+  background: white;
+  color: var(--navy);
+  border: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: 300ms ease;
+}
+
+.btn-login:hover {
+  background-color: var(--navy);
+  color: azure;
+  box-shadow: 0 8px 16px rgba(8, 9, 64, 0.12);
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, var(--navy) 0%, #0a0f7a 100%);
+  color: white;
+  padding: 120px 0 80px;
+  margin-top: 70px;
+}
+
+.page-header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 1.3rem;
+  color: var(--light-blue);
+  margin-top: 20px;
+}
+
+/* Story Section */
+.story-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.story-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: var(--navy);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.story-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.story-img {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mission & Vision */
+.mission-vision {
+  padding: 80px 0;
+}
+
+.mv-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(8, 9, 64, 0.2);
+}
+
+.mv-card h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.mv-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+/* Team Section */
+.team-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.team-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: var(--navy);
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.team-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  /* background: var(--light-blue); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--navy);
+  font-weight: 700;
+  background-size: 100%;
+  border: 1px solid ;
+  box-shadow: 5px 3px 5px black;
+
+}
+
+#Yash-img{
+  background-image: url(../images/Yash_img.png);
+}
+
+#Sarthak-img{
+  background-image: url(../images/Sarthak.png);
+}
+
+/* .team-img img{
+  width: 120px;
+  height: 120px;
+} */
+
+.team-card h4 {
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team-card .role {
+  color: rgb(87, 131, 42);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 0;
+}
+
+.values-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: var(--navy);
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.value-item {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.value-icon {
+  width: 100px;
+  height: 100px;
+  background: var(--navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 3rem;
+  color: white;
+}
+
+.value-item h4 {
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Footer - Same as homepage */
+footer {
+  background-color: var(--navy);
+  color: white;
+  padding: 40px 0 20px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4);
+}
+
+footer h3,
+footer h4 {
+  color: var(--light-blue);
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: var(--light-blue);
+  text-decoration: underline;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Property Tax System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f4f9ff;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .navbar {
+        background-color: rgb(8, 9, 64);
+      }
+      .navbar .navbar-brand,
+      .navbar .nav-link {
+        color: white !important;
+      }
+      .navbar .nav-link.active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      .dashboard-card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s;
+      }
+      .dashboard-card:hover {
+        transform: translateY(-5px);
+      }
+      .card-icon {
+        font-size: 2.5rem;
+      }
+
+      .recent-table thead {
+        background-color: #0d6efd;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Admin Panel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="owner.html">Owners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="property.html">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wards.html">Wards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tax.html">Taxes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="payment.html">Payments</a>
+            </li>
+            <li class="nav-item">
+          <li class="nav-item"><a class="nav-link text-danger" href="admin_login.html">Logout</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2 class="mb-4 fw-bold text-center">Admin Dashboard</h2>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-3">
+          <div class="card dashboard-card text-center p-4">
+            <div class="card-body">
+              <i class="fas fa-users card-icon text-primary"></i>
+              <h5 class="mt-3">Total Owners</h5>
+              <h2 class="fw-bold text-dark">125</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card dashboard-card text-center p-4">
+            <div class="card-body">
+              <i class="fas fa-building card-icon text-info"></i>
+              <h5 class="mt-3">Total Properties</h5>
+              <h2 class="fw-bold text-dark">320</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card dashboard-card text-center p-4">
+            <div class="card-body">
+              <i class="fas fa-exclamation-circle card-icon text-danger"></i>
+              <h5 class="mt-3">Unpaid Taxes</h5>
+              <h2 class="fw-bold text-danger">₹1.2L</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card dashboard-card text-center p-4">
+            <div class="card-body">
+              <i class="fas fa-rupee-sign card-icon text-success"></i>
+              <h5 class="mt-3">Total Collected</h5>
+              <h2 class="fw-bold text-success">₹5.4L</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="mb-3">Recent Payments</h4>
+        <div class="table-responsive">
+          <table class="table table-hover recent-table align-middle">
+            <thead>
+              <tr>
+                <th>Payment ID</th>
+                <th>Owner Name</th>
+                <th>Property ID</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Mode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PMT101</td>
+                <td>Ravi Sharma</td>
+                <td>P12345</td>
+                <td>₹8,000</td>
+                <td>2024-09-14</td>
+                <td><i class="fas fa-mobile-alt text-success"></i> UPI</td>
+              </tr>
+              <tr>
+                <td>PMT102</td>
+                <td>Neha Patil</td>
+                <td>P67890</td>
+                <td>₹12,000</td>
+                <td>2024-09-16</td>
+                <td><i class="fas fa-credit-card text-primary"></i> Card</td>
+              </tr>
+              <tr>
+                <td>PMT103</td>
+                <td>Akash Singh</td>
+                <td>P11223</td>
+                <td>₹9,500</td>
+                <td>2024-09-18</td>
+                <td><i class="fas fa-money-bill text-warning"></i> Cash</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+      </body>
+</html>

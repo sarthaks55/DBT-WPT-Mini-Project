@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Properties</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .property-table th {
+        background-color: #0d6efd;
+        color: white;
+      }
+      .filter-section {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+      .badge-paid {
+        background-color: #198754;
+      }
+      .badge-unpaid {
+        background-color: #dc3545;
+      }
+      .badge-partial {
+        background-color: #ffc107;
+        color: #000;
+      }
+      .nav-link.active {
+        font-weight: bold;
+        color: #0d6efd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Property Tax System</a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="user_dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="my_properties.html"
+                >My Properties</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="my_taxes.html">My Taxes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="my_payments.html">My Payments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="signin.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2 class="mb-4 text-center">My Properties</h2>
+
+      <div class="filter-section mb-4">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="wardFilter" class="form-label">Ward</label>
+            <select class="form-select" id="wardFilter">
+              <option selected>All Wards</option>
+              <option>Ward 1</option>
+              <option>Ward 2</option>
+              <option>Ward 3</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="statusFilter" class="form-label">Tax Status</label>
+            <select class="form-select" id="statusFilter">
+              <option selected>All Status</option>
+              <option>Paid</option>
+              <option>Unpaid</option>
+              <option>Partial</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="typeFilter" class="form-label">Property Type</label>
+            <select class="form-select" id="typeFilter">
+              <option selected>All Types</option>
+              <option>Residential</option>
+              <option>Commercial</option>
+              <option>Industrial</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="table">
+        <table class="table table-bordered table-hover property-table">
+          <thead>
+            <tr>
+              <th>Property ID</th>
+              <th>Property Type</th>
+              <th>Area (sq ft)</th>
+              <th>Built Year</th>
+              <th>Annual Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>P12345</td>
+              <td>Residential</td>
+              <td>1200</td>
+              <td>2010</td>
+              <td>₹ 15,000</td>
+            </tr>
+            <tr>
+              <td>P67890</td>
+              <td>Commercial</td>
+              <td>2000</td>
+              <td>2015</td>
+              <td>₹ 25,000</td>
+            </tr>
+            <tr>
+              <td>P11223</td>
+              <td>Residential</td>
+              <td>950</td>
+              <td>2005</td>
+              <td>₹ 12,000</td>
+            </tr>
+            <tr>
+              <td>P44556</td>
+              <td>Industrial</td>
+              <td>3500</td>
+              <td>2018</td>
+              <td>₹ 45,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

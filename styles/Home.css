@@ -1,0 +1,264 @@
+:root {
+            --navy: rgb(8, 9, 64);
+            --light-blue: rgb(192, 222, 232);
+        }
+        
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        .nav-link {
+            color: var(--navy) !important;
+            font-size: 18px;
+            margin: 0 10px;
+            padding: 8px 12px !important;
+            transition: 300ms ease;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            background-color: var(--navy);
+            color: azure !important;
+            box-shadow: 0 8px 16px rgba(8, 9, 64, 0.12);
+        }
+
+        .btn-login {
+            background: white;
+            color: var(--navy);
+            border: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: 300ms ease;
+            text-decoration: none; 
+        }
+
+        .btn-login:hover {
+            background-color: var(--navy);
+            color: azure;
+            box-shadow: 0 8px 16px rgba(8, 9, 64, 0.12);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: var(--navy);
+            padding: 100px 0 50px;
+            min-height: 80vh;
+        }
+
+        .hero-heading h1 {
+            font-family: "Oswald", sans-serif;
+            font-size: 3.5rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        .hero-desc {
+            font-size: 1.5rem;
+            color: var(--light-blue);
+            font-family: "Oswald", sans-serif;
+            margin: 20px 0;
+        }
+
+        .btn-cta {
+            background-color: var(--light-blue);
+            color: var(--navy);
+            font-size: 1.5rem;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .btn-cta:hover {
+            transform: scale(1.05);
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        .certified-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .certified-badge img {
+            width: 40px;
+            filter: invert();
+        }
+
+        .certified-badge p {
+            color: var(--light-blue);
+            margin: 0;
+        }
+
+        .hero-img img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Trust Section */
+        .trust-section {
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 40px 20px;
+        }
+
+        .trust-lead {
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-size: 2.5rem;
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        .industry-logo {
+            width: 180px;
+            margin: 20px;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-size: 2.5rem;
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: rgb(87, 131, 42);
+            margin: 10px 0 40px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 15px 0;
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-img {
+            width: 100%;
+            max-width: 250px;
+            filter: invert();
+            margin-bottom: 20px;
+        }
+
+        .feature-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--navy);
+        }
+
+        /* Reviews Section */
+        .review-section {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+        }
+
+        .review-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 100%;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(8, 9, 64, 0.12);
+        }
+
+        .review-text {
+            font-style: italic;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .reviewer-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid var(--navy);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 80px;
+            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        footer h3, footer h4 {
+            color: var(--light-blue);
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--light-blue);
+            text-decoration: underline;
+        }
+
+        footer .list-unstyled li {
+            margin-bottom: 8px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-heading h1 {
+                font-size: 2rem;
+            }
+            .hero-desc {
+                font-size: 1.2rem;
+            }
+            .btn-cta {
+                width: 100%;
+            }
+        }

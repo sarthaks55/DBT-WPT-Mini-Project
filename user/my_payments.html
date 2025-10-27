@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Payments - Property Tax System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f4f9ff;
+      }
+      .table thead {
+        background-color: #0d6efd;
+        color: white;
+      }
+      .card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Property Tax System</a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="user_dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="my_properties.html">My Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="my_taxes.html">My Taxes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="#">My Payments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="user_login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2 class="mb-4">Payment History</h2>
+
+      <div class="card p-4">
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th>Payment ID</th>
+                <th>Property ID</th>
+                <th>Address</th>
+                <th>Year</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Payment Mode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PMT001</td>
+                <td>PROP001</td>
+                <td>123 Main Street</td>
+                <td>2024</td>
+                <td>₹10,000</td>
+                <td>2024-05-10</td>
+                <td><i class="fas fa-mobile-alt text-success"></i> UPI</td>
+              </tr>
+              <tr>
+                <td>PMT002</td>
+                <td>PROP002</td>
+                <td>45 Garden Ave</td>
+                <td>2024</td>
+                <td>₹8,000</td>
+                <td>2024-06-12</td>
+                <td><i class="fas fa-credit-card text-primary"></i> Card</td>
+              </tr>
+              <tr>
+                <td>PMT003</td>
+                <td>PROP001</td>
+                <td>123 Main Street</td>
+                <td>2023</td>
+                <td>₹9,500</td>
+                <td>2023-04-18</td>
+                <td><i class="fas fa-money-bill text-warning"></i> Cash</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PTMS</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contactUS.css">
+    <link rel="stylesheet" href="styles/Home.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="images/Logo.png" alt="PTMS Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contactUS.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-login" href="/user/signin.html">User</a>
+                    <a class="btn btn-login"  href="/admin/admin_login.html">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1>Get In Touch</h1>
+            <p>We're here to help! Reach out to us anytime</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Message</h3>
+
+                        <!-- Success Alert -->
+                        <div id="successAlert" class="alert alert-success mb-4">
+                            <strong>Success!</strong> Your message has been sent. We'll get back to you within 24 hours.
+                        </div>
+
+                        <form id="contactForm">
+                            <!-- Personal Information -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName"
+                                        placeholder="Enter First Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name"
+                                        required>
+                                </div>
+                            </div>
+
+                            <!-- Contact Details -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">@</span>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter your E-mail ID" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">📞</span>
+                                        <input type="tel" class="form-control" id="phone"
+                                            placeholder="Enter Phone Number" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Professional Links -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="company" class="form-label">Company/Organization</label>
+                                    <input type="text" class="form-control" id="company"
+                                        placeholder="Your Company Name">
+                                </div>
+                            </div>
+
+                            <!-- Additional Info -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="website" class="form-label">Website (Optional)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">🌐</span>
+                                        <input type="url" class="form-control" id="website"
+                                            placeholder="Enter your website Link">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Choose a subject...</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="billing">Billing Question</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                        <option value="demo">Request a Demo</option>
+                                        <option value="feedback">Feedback</option>
+                                        \<option value="feedback">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" rows="6"
+                                    placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+
+                            <!-- Terms Checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    I agree to the <a href="#" style="color: var(--navy);">Privacy Policy</a> and <a
+                                        href="#" style="color: var(--navy);">Terms of Service</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h4>Email Us</h4>
+                        <p>For general inquiries:</p>
+                        <a href="mailto:support@ptms.com">support@ptms.com</a>
+                        <p class="mt-3">For technical support:</p>
+                        <a href="mailto:tech@ptms.com">tech@ptms.com</a>
+                        <p class="mt-3">For partnerships:</p>
+                        <a href="mailto:partner@ptms.com">partner@ptms.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h4>Call Us</h4>
+                        <p>Customer Support:</p>
+                        <a href="tel:+917796700615">+91 77967 00615</a>
+                        <p class="mt-3">Sales Inquiries:</p>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                        <p class="mt-3">Monday - Friday: 9 AM - 6 PM</p>
+                        <p>Saturday: 10 AM - 4 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h4>Visit Us</h4>
+                        <p>PTMS Headquarters</p>
+                        <p>Tech Park, Sector 12</p>
+                        <p>Navi Mumbai - 400706</p>
+                        <p>Maharashtra, India</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com" class="social-icon" target="_blank" title="LinkedIn">in</a>
+                            <a href="https://twitter.com" class="social-icon" target="_blank" title="Twitter">𝕏</a>
+                            <a href="https://facebook.com" class="social-icon" target="_blank" title="Facebook">f</a>
+                            <a href="https://instagram.com" class="social-icon" target="_blank" title="Instagram">📷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us on the Map</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120615.72236587433!2d72.93838354999999!3d19.033630199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3d2e1c8c2d9%3A0x3c2d8a4a8f7f8f8!2sNavi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3>Property Tax Management System</h3>
+                    <p>Ensuring accuracy, transparency, and efficiency in Tax Management.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Sign In</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:support@ptms.com">support@ptms.com</a></p>
+                    <p>Phone: +91 77967 00615</p>
+                    <p>Location: Navi Mumbai, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PTMS | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //form Data Validation and local storage code
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+        //    save all in one array format
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                company: document.getElementById('company').value,
+                website: document.getElementById('website').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+
+            };
+            // Save each field to localStorage
+            localStorage.setItem('firstName', document.getElementById('firstName').value);
+            localStorage.setItem('lastName', document.getElementById('lastName').value);
+            localStorage.setItem('email', document.getElementById('email').value);
+            localStorage.setItem('phone', document.getElementById('phone').value)   
+            localStorage.setItem('company', document.getElementById('company').value);
+            localStorage.setItem('website', document.getElementById('website').value);
+            localStorage.setItem('subject', document.getElementById('subject').value);
+            localStorage.setItem('message', document.getElementById('message').value);
+
+            // Save to localStorage
+            localStorage.setItem('lastContactSubmission', JSON.stringify(formData));
+
+            // Show success message
+            const alert = document.getElementById('successAlert');
+            alert.style.display = 'block';
+
+            // Scroll to success message
+            alert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Reset form
+            this.reset();
+
+            // Hide alert after 5 seconds
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
